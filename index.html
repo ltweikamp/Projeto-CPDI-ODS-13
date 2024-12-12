@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 13 - Ação Climática</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1>ODS 13 - Ação Contra a Mudança Global do Clima</h1>
+        <p>Juntos, podemos proteger o planeta e combater as mudanças climáticas!</p>
+    </header>
+
+    <main>
+        <section class="info-section">
+            <h2>Sobre a ODS 13</h2>
+            <p>A ODS 13 visa tomar medidas urgentes para combater as mudanças climáticas e seus impactos, promovendo a resiliência e a conscientização global.</p>
+        </section>
+
+        <section class="actions-section">
+            <h2>Ações Que Você Pode Fazer</h2>
+            <ul>
+                <li>Reduzir o consumo de energia.</li>
+                <li>Priorizar o uso de transportes sustentáveis.</li>
+                <li>Plantar árvores em áreas desmatadas.</li>
+                <li>Evitar o desperdício de água e alimentos.</li>
+            </ul>
+        </section>
+
+        <main>
+            <section class="interactive-section">
+                <h2>Qual Seu Impacto?</h2>
+                <form id="carbono-form">
+                    <label for="eletricidade">Consumo mensal de eletricidade (kWh):</label>
+                    <input type="number" id="eletricidade" name="eletricidade" min="0" required>
+    
+                    <label for="transporte">Quilômetros percorridos por mês (veículo a combustão):</label>
+                    <input type="number" id="transporte" name="transporte" min="0" required>
+    
+                    <button type="submit">Calcular</button>
+                </form>
+                <p id="resultado"></p>
+            </section>
+        </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 ODS 13 - Ação Climática. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
