@@ -12,3 +12,16 @@ document.getElementById('carbono-form').addEventListener('submit', function(even
     const resultElement = document.getElementById('resultado');
     resultElement.textContent = `Seu impacto de carbono mensal é de aproximadamente ${totalCarbon.toFixed(2)} kg de CO2.`;
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("formContato");
+    const mensagemAgradecimento = document.getElementById("mensagemAgradecimento");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      mensagemAgradecimento.style.display = "block";
+
+      form.reset();
+    });
+  });
